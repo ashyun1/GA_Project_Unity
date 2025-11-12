@@ -69,12 +69,12 @@ public class MazeGenerator : MonoBehaviour
 
         if (isSolvable)
         {
-            Debug.Log($"🎉 탈출 가능한 맵 생성! (시도 횟수: {attempts}, 경로 길이: {solutionPath.Count})");
+            Debug.Log($" 탈출 가능한 맵 생성! (시도 횟수: {attempts}, 경로 길이: {solutionPath.Count})");
             VisualizeMap();
         }
         else
         {
-            Debug.LogError($"⚠️ 시도 횟수({maxAttempts}회) 내에 탈출 가능한 맵을 생성하지 못했습니다. 확률({wallGenerationProbability})을 조정하세요.");
+            Debug.LogError($" 시도 횟수({maxAttempts}회) 내에 탈출 가능한 맵을 생성하지 못했습니다. 확률({wallGenerationProbability})을 조정하세요.");
             VisualizeMap();
         }
     }
