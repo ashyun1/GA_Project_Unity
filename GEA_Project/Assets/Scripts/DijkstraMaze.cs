@@ -74,7 +74,7 @@ public class DijkstraMaze : MonoBehaviour
             {
                 VisualizePath(currentPath);
                 int totalCost = CalculatePathCost(currentPath);
-                Debug.Log($"✅ 최단 경로 탐색 완료. 총 비용: {totalCost}. Enter 키를 눌러 캐릭터를 이동시키세요.");
+                Debug.Log($" 최단 경로 탐색 완료. 총 비용: {totalCost}. Enter 키를 눌러 캐릭터를 이동시키세요.");
             }
             else
             {
@@ -134,7 +134,7 @@ public class DijkstraMaze : MonoBehaviour
             }
         } while (!IsPathPossible_DFS(start, goal));
 
-        Debug.Log($"✅ 맵 생성 성공! 시도 횟수: {attempts}. 탈출 가능합니다.");
+        Debug.Log($" 맵 생성 성공! 시도 횟수: {attempts}. 탈출 가능합니다.");
         VisualizeMap();
     }
 
